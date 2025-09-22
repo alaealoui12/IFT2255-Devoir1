@@ -14,7 +14,7 @@ title: Vue d'ensemble
 
 ## Équipe
 
-- **`M1`:** Membre 1 (matricule) #nom-utilisateur
+- **`M1`:** Tarek zerroug 20293977 #tarekzerroug
 - **`M2`:** Membre 2 (matricule) #nom-utilisateur
 - **`M3`:** Membre 3 (matricule) #nom-utilisateur  
 - **`M4`:** Membre 4 (matricule) #nom-utilisateur
