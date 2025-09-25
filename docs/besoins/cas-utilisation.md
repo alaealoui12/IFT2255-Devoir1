@@ -17,7 +17,7 @@ TODO: Introduction aux cas d’utilisation du système.
 |      |                         |                     | centres d’intérêt, contraintes personnelles)                                   |
 |      |                         |                     | 3-L’étudiant remplit le formulaire avec ses choix                              |
 |      |                         |                     | 4-Le système enregistre ces informations dans la base de données               |
-|      |                         |                     | 5-Par la suite, quand l’étudiant fait une recherche de cours, la plateforme    | 
+|      |                         |                     | 5- Quand l’étudiant fait une recherche de cours, la plateforme    | 
 |                                |                     | adapte automatiquement l’affichage en fonction du profil enregistré            |
 |------|-------------------------|---------------------|--------------------------------------------------------------------------------|
 | CU02 | Créer un avis étudiant  | Étudiant            | 1-L’étudiant choisit un cours qu’il a suivi et accède à la section Avis        |
