@@ -1,0 +1,49 @@
+[ {
+  "cours" : "IFT2255",
+  "difficulte" : 2,
+  "charge" : 4,
+  "commentaire" : "je trouve assez facile , mais les projets peuvent etre longs",
+  "auteur" : "tarek_zer"
+}, {
+  "cours" : "MAT 1400",
+  "difficulte" : 5,
+  "charge" : 3,
+  "commentaire" : "très difficile car je ne suis pas très bon en mathématique",
+  "auteur" : "tarek_zer"
+}, {
+  "cours" : "IFT2105",
+  "difficulte" : 5,
+  "charge" : 5,
+  "commentaire" : "IFT2105 est une phobie sans nom ...",
+  "auteur" : "tarek_zer"
+}, {
+  "cours" : "IFT1575",
+  "difficulte" : 3,
+  "charge" : 2,
+  "commentaire" : "IFT1575 parait dure mais ne l'es pas vraiment ...",
+  "auteur" : "tarek_zer"
+}, {
+  "cours" : "IFT1215",
+  "difficulte" : 2,
+  "charge" : 2,
+  "commentaire" : "IFT1215 est assez simple",
+  "auteur" : "tarek_zer"
+}, {
+  "cours" : "IFT2255",
+  "difficulte" : 2,
+  "charge" : 4,
+  "commentaire" : "IFT2255 est facile mais j'aurai aimé une équipe qui travaille ... et qui ne me laisse pas faire 95 prcent du travail .. j'éspère la clémence du professeur ..",
+  "auteur" : "tarek_zer"
+}, {
+  "cours" : "IFT2255",
+  "difficulte" : 1,
+  "charge" : 1,
+  "commentaire" : "tres facile",
+  "auteur" : "tarek_zer"
+}, {
+  "cours" : "IFT2255",
+  "difficulte" : 2,
+  "charge" : 2,
+  "commentaire" : "cours assez facile",
+  "auteur" : "tarek_zer"
+} ]

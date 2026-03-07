@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Catalogue de cours</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Catalogue de recherche de cours</h1>
+</header>
+
+<section class="search">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Rechercher par sigle ou mots-clés (ex: IFT, programmation)"
+  >
+
+  <select id="termFilter">
+ 
+    <option value="winter">H25 (Hiver)</option>
+    <option value="autumn">A24 (Automne)</option>
+    <option value="summer">E24 (Été)</option>
+  </select>
+</section>
+
+<section id="courses"></section>
+<p id="global-loading" style="text-align:center; display:none;">
+  Chargement des cours<span id="global-dots">.</span>
+</p>
+<div class="button-container">
+  <button class="load-more" onclick="afficherplusdecours()">Voir plus</button>
+  <button class="load-less" onclick="affichermoinsdecours()">Voir moins</button>
+</div>
+
+
+
+<section class="panel">
+  <h2>Comparer deux ou  plusieurs cours</h2>
+
+  <input
+    type="text"
+    id="compareInput"
+    placeholder="(ex: IFT2255, IFT1015, IFT1025)"
+  >
+
+  <button onclick="compareCourses()">Comparer</button>
+
+  <div id="comparison"></div>
+</section>
+
+<section class="panel">
+  <h2>Vérifier un conflit d’horaire</h2>
+
+  <input
+    type="text"
+    id="conflictInput"
+    placeholder="Ex: IFT2255, MAT1400"
+  >
+
+  <select id="conflictTerm">
+    <option value="winter">H25 (Hiver)</option>
+    <option value="autumn">A24 (Automne)</option>
+    <option value="summer">E24 (Été)</option>
+  </select>
+
+  <button class="btn-primary" onclick="checkConflictBetweenTwoCourses()">
+    Vérifier le conflit
+  </button>
+
+  <div id="conflictSchedules"></div>
+<div id="conflictResult"></div>
+</section>
+<section class="panel">
+  <h2>Vérifier l’éligibilité à un cours</h2>
+
+  <label for="targetCourse">
+    Cours à vérifier
+  </label>
+  <input
+    type="text"
+    id="targetCourse"
+    placeholder="Ex: IFT2255"
+  >
+
+  <label for="completedCourses">
+    Cours complétés
+  </label>
+  <input
+    type="text"
+    id="completedCourses"
+    placeholder="Ex: IFT1015, IFT1025"
+  >
+
+  <label for="cycle">
+    Cycle d’études
+  </label>
+  <select id="cycle">
+    <option value="bac">Baccalauréat</option>
+    <option value="maitrise">Maîtrise</option>
+  </select>
+
+  <button onclick="checkEligibility()">
+    Vérifier l’éligibilité
+  </button>
+
+  <div id="eligibilityResult"></div>
+</section>
+<section class="panel">
+  <h2>Cours par programme</h2>
+
+  <input
+    type="text"
+    id="programId"
+    placeholder="Ex : 117510"
+  >
+
+  <button onclick="goToProgramPage()">
+    Voir les cours du programme
+  </button>
+</section>
+
+<script>
+function goToProgramPage() {
+  const programId = document.getElementById("programId").value.trim();
+
+  if (!programId) {
+    alert("Veuillez entrer un identifiant de programme");
+    return;
+  }
+
+  window.location.href = "program.html?id=" + programId;
+}
+</script>
+<script src="script.js"></script>
+<script src="course.js"></script>
+</body>
+</html>
